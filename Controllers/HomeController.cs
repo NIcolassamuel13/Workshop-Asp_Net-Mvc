@@ -20,8 +20,14 @@ namespace SaleswebMvc.Controllers
 
         public IActionResult Index()
         {
+
+            ViewData["message"] = "Your application description page.";
+            ViewData["email"] = "d.13castrosilva@gmail.com";
             return View();
         }
+
+   
+
 
         public IActionResult Privacy()
         {
